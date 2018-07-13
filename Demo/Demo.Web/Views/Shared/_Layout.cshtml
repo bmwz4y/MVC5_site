@@ -1,0 +1,88 @@
+﻿@using System.Globalization
+@using additiv.Imcs.Backend.Module.Web.Extensions
+@using additiv.Imcs.Backend.Module.Web.Utilities
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <script> (function (b) { b.className = b.className.replace(/\bno-js\b/, 'js'); })(document.documentElement);</script>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="@Url.ResolveContent("Themes/additiv-imcs/base-styles.css")" rel="stylesheet">
+    <link href="@Url.ResolveContent("Themes/additiv-imcs/styles.css")" rel="stylesheet">
+    <link href="@Url.ResolveContent("Themes/styles.css")" rel="stylesheet">
+
+    @* DO not add module scripts or styleshets here. Add it in ModuleRegistration. *@
+    @foreach (string styleSheetUrl in ContentLocationManager.GetStyleSheetList())
+    {
+        <text>
+            <link href="@styleSheetUrl" rel="stylesheet"></text>
+    }
+
+    @foreach (string scriptUrl in ContentLocationManager.GetJavaScriptList())
+    {
+        <text>
+            <script src="@scriptUrl" type="text/javascript"></script></text>
+    }
+
+    <!--[if lt IE 9]>
+        <script src="@Url.ResolveContent("Scripts/html5shiv.js")"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        controllerName = '@ViewContext.RouteData.Values["Controller"]';
+        actionName = '@ViewContext.RouteData.Values["Action"]';
+        areaName = '@ViewContext.RouteData.DataTokens["Area"]';
+        additiv.imcs.applicationPath = '@Url.Content("~")';
+        additiv.imcs.languageCode = '@CultureInfo.CurrentUICulture.TwoLetterISOLanguageName';
+    </script>
+
+    @*
+        LibExtension
+        Appends scripts or styles only needed on certain pages
+    *@
+    @RenderSection("LibExtensions", required: false)
+</head>
+<body>
+    <div id="page">
+        <header id="header">
+            <div class="header-inner position-relative">
+                <img alt="additiv DFS" src="@Url.ResolveContent("themes/additiv-imcs/media/logo.png")">
+                <div class="navigation-meta">
+                    @Html.Partial("LogOnPartial")
+                    @RenderSection("GlobalFilter", required: false)
+                </div>
+            </div>
+        </header>
+        <nav id="navMain">
+            @Html.Partial("Navigation")
+        </nav>
+        <div id="content">
+            @Html.Partial("TabHeader")
+            <div id="contentInner" class="cf">
+                <div id="contentMain" class="page-content-width column-content">
+                    <div class="ui-tabs-panel cf">
+                        @Html.Partial("SideMenu")
+                        <div class="side-attached-body">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </div>
+                <div id="contentService" class="page-service-width column-service">
+                </div>
+            </div>
+        </div>
+        <footer id="footer" class="footer">
+            <div class="footer-inner inverted-text-color">
+                @Html.Partial("Footer")
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

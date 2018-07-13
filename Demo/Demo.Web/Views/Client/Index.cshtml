@@ -1,0 +1,77 @@
+﻿
+@using System.Web.Mvc.Ajax
+@using additiv.Imcs.Backend.Module.Web.Extensions
+@using additiv.Imcs.Web.Widgets.Extensions
+@using additiv.Web.Widgets
+@using Demo.Core.Resources
+@using Demo.Web.Models
+@model ClientFilterModel
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-3 form-group-inline">
+                @Html.CustomLabelFor(x => x.Id)
+                @Html.CustomTextBoxFor(x => x.Id)
+            </div>
+            <div class="col-sm-3 form-group-inline">
+                @Html.CustomLabelFor(x => x.FirstName)
+                @Html.CustomTextBoxFor(x => x.FirstName)
+            </div>
+            <div class="col-sm-3 form-group-inline">
+                @Html.CustomLabelFor(x => x.BirthDate)
+                @Html.CustomTextBoxFor(x => x.BirthDate, new { @class = "fm-text datepicker" })
+            </div>
+            @*<div class="col-sm-3 form-group-inline">
+                    @Html.CustomLabelFor(x => x.Email)
+                    @Html.CustomTextBoxFor(x => x.Email)
+                </div>*@
+            <div class="col-sm-3 form-group-inline">
+                @Html.CustomLabelFor(x => x.TypeId)
+                @*added null assertion to test unit testings*@
+                @(ViewBag.ClientTypes != null ? Html.CustomDropDownListFor(x => x.TypeId, (IEnumerable<SelectListItem>) ViewBag.ClientTypes) : Html.CustomTextBoxFor(x => x.TypeId))
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 float-right">
+                @*<div class="form-group-inline">&nbsp;</div>*@
+                <div class="form-group-inline">
+                    <button id="search" type="button" class="form-button-blue" name="button" value="Search"><span class="glyphicon glyphicon-search"></span> Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="separator-full"></div>
+        <div class="buttonpane">
+            <input id="create" type="button" value="Create" class="btn btn-default">
+            <input id="edit" type="button" value="Edit" class="btn btn-warning">
+            <input id="delete" type="button" value="Delete" class="btn btn-warning">
+        </div>
+        <div>&nbsp;</div>
+        <table id="ClientTable" class="table"></table>
+    </div>
+</div>
+@*<script src="@Url.ResolveContent("Scripts/demo.clientList.js")"></script>*@
+<script>
+    $(function () {
+        var url = {
+            getClients: '@Url.Action("List")',
+            editClient: '@Url.Action("Edit")',
+            addClient: '@Url.Action("Create")',
+            deleteClients: '@Url.Action("Delete")'
+        };
+
+        var resources = {
+            Id: '@Client.Id',
+            FullName: '@Client.Name',
+            BirthDate: '@Client.BirthDate',
+            Email: '@Client.Email',
+            Type: '@Client.ClientType',
+            RegisterDate: '@Client.RegisterDate',
+            removalConfirmation: '@Common.RemovalConfirmation',
+            ajaxCRUDErrorMessage: '@Common.AjaxCRUDErrorMessage'
+        };
+
+        demo.clientList.init(url, resources);
+        demo.clientList.initEvents();
+    });
+</script>

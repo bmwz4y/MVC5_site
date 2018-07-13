@@ -1,0 +1,32 @@
+﻿@{
+	var url = HttpContext.Current.Request.Url.AbsolutePath.ToLower();
+
+	var menuList = new[] {
+		
+		new { Name = "Clients",					Url = "/Client/"},
+		new { Name = "Client Type",					Url = "/ClientType/"}
+	}
+	.Select(x => new
+					 {
+						x.Name,
+						x.Url,
+						Selected = url.Contains(x.Url.ToLower() + "/") || url.EndsWith(x.Url.ToLower())
+					 });
+}
+
+<div id="tabnavigation" class="tabs">
+	<ul class="navigation horizontal-list uc cf">
+		@foreach(var menuItem in menuList){
+			<li class="@(menuItem.Selected ? "ui-tabs-selected ui-state-active" : "")">
+				<a href="@menuItem.Url" >@menuItem.Name</a>
+			</li>
+		}
+	</ul>
+</div>
+
+<script type="text/javascript">
+	$(function () {
+		$("#tabnavigation").tabmenu();
+	});
+</script>
+

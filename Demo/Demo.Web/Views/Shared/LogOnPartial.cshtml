@@ -1,0 +1,8 @@
+﻿@if(Request.IsAuthenticated) {
+	<ul class="cf navigation navigation-language horizontal-list inverted-text-color">
+		<li class="bordered">Welcome, <b>@Context.User.Identity.Name</b></li>
+		<li class="bordered">
+			<a href="#">Log Off</a>
+		</li>
+	</ul>
+}

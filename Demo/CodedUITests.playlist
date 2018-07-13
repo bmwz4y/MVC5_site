@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="Demo.CodedUITest.CodedUiTest1.CodedUiTestFireFox" /><Add Test="Demo.CodedUITest.CodedUiTest1.CodedUiTestMisc" /><Add Test="Demo.CodedUITest.CodedUiTest1.CodedUIwithBrowsersync" /><Add Test="Demo.CodedUITest.CodedUiTest1.CodedUIchromeDevBrowsersync" /></Playlist>

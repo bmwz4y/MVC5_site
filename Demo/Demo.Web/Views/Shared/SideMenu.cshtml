@@ -1,0 +1,15 @@
+@{
+	List<SelectListItem> menuLevel3Additional = (List<SelectListItem>)ViewBag.MenuLevel3Additional ?? new List<SelectListItem>();
+	if (menuLevel3Additional.Any())
+	{
+		<div id="CommandAreas" class="side-menu-column cf">
+			<h1 id="TitleArea" class="page-title">Main Settings</h1>
+			<ul class="navigation navigation-functions">
+				@foreach(SelectListItem menuItem in menuLevel3Additional)
+				{
+					<li><a @if (menuItem.Selected) {<text> class="selected" </text>} href="@menuItem.Value">@menuItem.Text</a></li>
+				}
+			</ul>
+		</div>
+	}
+}

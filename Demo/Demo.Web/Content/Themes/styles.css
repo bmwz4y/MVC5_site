@@ -1,0 +1,46 @@
+﻿.command-area  {
+	float: left;
+	margin-right: 25px;
+	min-width: 150px;
+}
+
+.navigation-functions span {
+    background: linear-gradient(to bottom, #6F93B7 0%, #496D85 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-left: 1px solid #496D85;
+    border-right: 1px solid #496D85;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 3px 10px 2px;
+    text-transform: uppercase;
+    display:block;
+    cursor:pointer;
+}
+.navigation-functions:first-child 
+ {
+    border-top: 1px solid #496D85;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.navigation-functions:first-child span:hover, .navigation-functions:first-child span.selected {
+    border-top-color: #C9C7C7;
+}
+.navigation-functions:last-child span {
+    border-bottom: 1px solid #496D85;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.navigation-functions:last-child span:hover, .navigation-functions:last-child span.selected {
+    border-bottom-color: #C9C7C7;
+}
+.navigation-functions span:hover, .navigation-functions span.selected, .command-navigation-box-selected span, .command-function-box-selected span {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #C9C7C7;
+    color: #55789B;
+}
+
+#ContactTabs .fm-group {
+	margin: 0 !important;
+	width: auto !important;
+}

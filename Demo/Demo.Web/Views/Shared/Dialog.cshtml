@@ -1,0 +1,89 @@
+﻿@model additiv.Imcs.Backend.Module.Web.ViewModels.DialogModel
+<script type="text/javascript">
+	$(function () {
+		var modal = $("#@Model.Id");
+
+		modal.dialog({
+        	autoOpen: false,
+			modal: true,
+			draggable: false,
+        	resizable: false,
+			width: @Model.Width,
+			position: 'center',
+			create: function() {
+				modal.on('dialogopen', function () {
+					var $this = $(this),
+						$window = $(window);
+
+					if ($this.parent().height() > $window.height()) {
+						$this.height($window.height() * 0.7);
+					}
+					modal.dialog('option', 'position', 'center');
+				});
+			}
+			@if(Model.Buttons != null && Model.Buttons.Count > 0){
+				@Html.Raw(@"
+				, buttons: [")
+				bool addComma = false;
+				foreach(var button in Model.Buttons){
+				if(addComma){
+					@Html.Raw(",")
+				}
+				addComma = true;
+				@Html.Raw(@"
+					{
+						text: '" + @button.Title + @"'
+						,'class': '" + (@button.IsAction ? "ui-button-action " : "ui-button ") + (@button.CssClass ?? "") + "'" + 
+						(String.IsNullOrEmpty(button.JsCallBack) ? "" : @"
+						,click: "+ @button.JsCallBack) + @"
+					}")
+				}
+				@Html.Raw(@"
+				]")
+			}
+			@if (!string.IsNullOrEmpty(Model.BeforeClose))
+			{
+				@Html.Raw(@"
+				, beforeClose: " + Model.BeforeClose)
+			}
+		
+		});
+
+		@if (!string.IsNullOrEmpty(Model.OpenElement))
+		{
+			<text>
+				$('@Model.OpenElement').live('click', function () {
+					var url = $(this).attr('popup-url');
+					if(!url){
+						@Html.Raw("url = '" + Url.Content(Model.ContentPath) + "'")
+					}
+			 
+					$('#@Model.Id').html('')
+						.load(url, function () {
+							$('#@Model.Id').dialog('open');
+					});
+					return false;
+				});
+			</text>
+		}
+	});
+</script>
+<div id="@Model.Id" title="@Model.HeaderText" style="display:none"></div>
+
+@*
+
+buttons: [{
+        		text: 'Close',
+        		'class': 'ui-button',
+        		click: function () {
+        			$(this).dialog('close');
+        		}
+        	}, {
+        		text: 'Save',
+        		'class': 'ui-button-action',
+        		click: function () {
+        			$(this).find('form').submit();
+        		}
+        	}]
+
+			*@
