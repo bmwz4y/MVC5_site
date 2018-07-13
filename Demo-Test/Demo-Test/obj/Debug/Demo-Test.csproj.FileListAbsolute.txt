@@ -1,0 +1,53 @@
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\Demo-Test.dll.config
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\Demo-Test.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\Demo-Test.pdb
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\Microsoft.Web.Infrastructure.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Helpers.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Mvc.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Razor.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Webpages.Deployment.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Webpages.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Webpages.Razor.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Razor.xml
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Webpages.xml
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Webpages.Deployment.xml
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Webpages.Razor.xml
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Helpers.xml
+c:\users\lara\source\repos\Demo-Test\Demo-Test\bin\System.Web.Mvc.xml
+c:\users\lara\source\repos\Demo-Test\Demo-Test\obj\Debug\Demo-Test.csprojResolveAssemblyReference.cache
+c:\users\lara\source\repos\Demo-Test\Demo-Test\obj\Debug\Demo-Test.csproj.CoreCompileInputs.cache
+c:\users\lara\source\repos\Demo-Test\Demo-Test\obj\Debug\Demo-Test.dll
+c:\users\lara\source\repos\Demo-Test\Demo-Test\obj\Debug\Demo-Test.pdb
+C:\Users\Lara\source\repos\Demo-Test\Demo-Test\bin\EntityFramework.dll
+C:\Users\Lara\source\repos\Demo-Test\Demo-Test\bin\GridMvc.dll
+C:\Users\Lara\source\repos\Demo-Test\Demo-Test\bin\EntityFramework.xml
+C:\Users\Lara\source\repos\Demo-Test\Demo-Test\bin\EntityFramework.SqlServer.dll
+C:\Users\Lara\source\repos\Demo-Test\Demo-Test\bin\EntityFramework.SqlServer.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\Demo-Test.dll.config
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\Demo-Test.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\Demo-Test.pdb
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\EntityFramework.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\EntityFramework.SqlServer.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\GridMvc.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\Microsoft.Web.Infrastructure.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Helpers.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Mvc.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Razor.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Webpages.Deployment.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Webpages.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Webpages.Razor.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\EntityFramework.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\EntityFramework.SqlServer.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Razor.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Webpages.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Webpages.Deployment.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Webpages.Razor.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Helpers.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\bin\System.Web.Mvc.xml
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\obj\Debug\Demo-Test.csprojResolveAssemblyReference.cache
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\obj\Debug\Demo-Test.dll
+D:\YEH\Study\2017-2018\2018 1st\CPE390+CPE490 - PRACTICAL TRAINING 1+2\Material\Demo-Test\Demo-Test\obj\Debug\Demo-Test.pdb
